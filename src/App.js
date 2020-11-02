@@ -6,12 +6,21 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Info from './components/Info';
 import Footer from './components/Footer';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
     <>
-      <Navbar />
-      
+      <BrowserRouter>
+          <Navbar />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/onas' component={About} />
+            <Route path='/galeria' component={Gallery} />
+          </Switch>
+          <Info />
+          <Footer />
+        </BrowserRouter>
     </>
   );
 }
