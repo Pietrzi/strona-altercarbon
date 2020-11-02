@@ -1,0 +1,20 @@
+@import './components/navbar.scss';
+@import './components/home.scss';
+@import './components/info.scss';
+@import './components/footer.scss';
+@import './components/about.scss';
+@import './components/engage.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
