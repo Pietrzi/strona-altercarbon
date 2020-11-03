@@ -1,10 +1,17 @@
-import React from 'react'
+import React from 'react';
+import Engage from './Engage';
+
+import logo from '../assets/log.png';
 
 const Home = () => {
     return (
-        <div>
-            Home
-        </div>
+        <>
+            <section className="home-section">
+            <img src={logo} alt="logo CarbonZero"/>
+                {/* <img src={require('../assets/log.png')} alt="logo CarbonZero"/> */}
+            </section>
+            <Engage />
+        </>
     )
 }
 

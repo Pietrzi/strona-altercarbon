@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Engage from './Engage';
 
 const Info = () => {
     return (
-        <div>
-            Info
-        </div>
+        <>
+            <section className="info-section">
+                Info
+            </section>
+            <Engage />
+        </>
     )
 }
 

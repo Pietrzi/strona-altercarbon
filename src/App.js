@@ -1,7 +1,7 @@
 import React from 'react';
 import './scss/style.scss';
+import { Switch, BrowserRouter, Route } from 'react-router-dom';
 
-import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Info from './components/Info';
@@ -15,10 +15,9 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/onas' component={About} />
+            <Route path='/onas' component={Info} />
             <Route path='/galeria' component={Gallery} />
           </Switch>
-          <Info />
           <Footer />
         </BrowserRouter>
     </>
